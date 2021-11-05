@@ -1,0 +1,14 @@
+.title {
+  font-size: 35px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 10;
+  background-color: skyblue;
+  border-bottom: solid 1px #ccc;
+  
+  margin: 0 auto;
+  color: black;
+}
+

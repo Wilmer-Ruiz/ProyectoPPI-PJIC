@@ -1,0 +1,131 @@
+.iconos {
+    width: 40px;
+    display: inline-table;
+    padding: 5px; 
+}
+
+:root {
+    --fondo: #BFEFFF;
+    --colortitulo: #00BFFF;
+    --colorcabecera: #00BFFF;
+}
+
+body {
+    background-color: var(--fondo);
+}
+
+h1 {
+    background-color: var(--colortitulo);
+}
+
+#home {
+    width:  30px;
+    background-color: var();
+    padding: 4px;
+    border-radius: 3px;   
+}
+
+.cabecera {
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-table;
+    font-size: 0.7em;
+    background-color: var(--colorcabecera);
+    padding: 5px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.filas {
+    width: 130px;
+    height: 20px;
+    margin-top: 5px;
+    display: inline-table;
+    font-size: 0.8em;
+    padding: 5px;
+    text-align: left;
+    line-height: 20px;  
+}
+
+/* Estilos formulario de ingreso de ecoparques */
+
+.tituloform{
+    background-color: skyblue;
+    padding: 10px;
+    text-align: center;
+}
+
+.texto-entrada {
+    text-align: left;
+    margin-right: 25px;
+    margin-left: 10px;
+/*    margin-top: 20px;*/
+    display: inline-block;
+    width: 150px; 
+}
+
+.formulario-acciones {
+    margin-top: 30px;
+    position: relative;
+    left: 35%;  
+}
+
+.emergente {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #6495ED;
+    background-color: rgba(100, 149, 237,0.4);
+}
+
+.contenido-emergente {
+    background-color: skyblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 28%;
+    color: white;
+    height: 510px;
+}
+
+#area-mensaje {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 310px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.formulario-controlador {
+    margin-top: 50px;
+    margin-left: 55px;
+}
+
+.entradas {
+    margin-left: 100px;
+    top: 100px;
+}
+
+#area-mensaje-editar {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 310px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 20px;  
+}

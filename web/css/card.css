@@ -1,0 +1,19 @@
+
+.contenedor {
+        display: flex;
+      }
+
+      
+
+.card-img-top{
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+    width: 18rem;
+    border-color: darkcyan
+}
+
+
