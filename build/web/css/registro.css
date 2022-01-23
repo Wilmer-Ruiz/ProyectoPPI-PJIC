@@ -13,172 +13,89 @@
     font-size: 0.9em;
 }
 
-label {
-    
-    display: inline-block;
-    width: 220px;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-}
-
 body {
-    background-color: skyblue;
-    font-family: "Helvetica Neue", Helvetica, Arial;
-    padding-top: 20px;
+    margin: 0;
+    padding: 0;
+    background: url(../img/luz-naturaleza.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
 }
 
-.container {
-    width: 406px;
-    max-width: 406px;
-    margin: 0 auto;
+.login-box {
+  width: 320px;
+  height: 550px;
+  background: #154728;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
 }
 
-#formulario {
-    padding: 0px 25px 25px;
-    background: #fff;
-    box-shadow: 
-        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
-        0px 4px 20px rgba( 0,0,0,0.33 );
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    display: table;
-    position: static;
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
 }
 
-#formulario .header {
-    margin-bottom: 20px;
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
 }
 
-#formulario .header h3 {
-    color: #333333;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
 }
 
-#formulario .header p {
-    color: #8f8f8f;
-    font-size: 14px;
-    font-weight: 300;
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-#formulario .sep {
-    height: 1px;
-    background: #e8e8e8;
-    width: 406px;
-    margin: 0px -25px;
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
 }
 
-#formulario .inputs {
-    margin-top: 25px;
+.login-box input[type="button"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #27AE60;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
 }
 
-#formulario .inputs label {
-    color: #8f8f8f;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-bottom: 7px;
-    display: block;
+.login-box input[type="button"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
 }
 
-input::-webkit-input-placeholder {
-    color:    #b5b5b5;
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
 }
 
-input:-moz-placeholder {
-    color:    #b5b5b5;
-}
-
-#formulario .inputs input[type=text], input[type=password] {
-    background: #f5f5f5;
-    font-size: 0.8rem;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    border: none;
-    padding: 13px 10px;
-    width: 330px;
-    margin-bottom: 20px;
-    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
-    clear: both;
-}
-
-#formulario .inputs input[type=text]:focus, input[type=password]:focus {
-    background: #fff;
-    box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
-    outline: none;   
-}
-
-#formulario .inputs .checkboxy {
-    display: block;
-    position: static;
-    height: 25px;
-    margin-top: 10px;
-    clear: both;
-}
-
-#formulario .inputs input[type=checkbox] {
-    float: left;
-    margin-right: 10px;
-    margin-top: 3px;
-}
-
-#formulario .inputs label.terms {
-    float: left;
-    font-size: 14px;
-    font-style: italic;
-}
-
-#formulario .inputs #submit {
-    width: 100%;
-    margin-top: 20px;
-    padding: 15px 0;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: center;
-    text-decoration: none;
-        background: -moz-linear-gradient(
-        top,
-        #b9c5dd 0%,
-        #a4b0cb);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#b9c5dd),
-        to(#a4b0cb));
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #737b8d;
-    -moz-box-shadow:
-        0px 5px 5px rgba(000,000,000,0.1),
-        inset 0px 1px 0px rgba(255,255,255,0.5);
-    -webkit-box-shadow:
-        0px 5px 5px rgba(000,000,000,0.1),
-        inset 0px 1px 0px rgba(255,255,255,0.5);
-    box-shadow:
-        0px 5px 5px rgba(000,000,000,0.1),
-        inset 0px 1px 0px rgba(255,255,255,0.5);
-    text-shadow:
-        0px 1px 3px rgba(000,000,000,0.3),
-        0px 0px 0px rgba(255,255,255,0);
-    display: table;
-    position: static;
-    clear: both;
-}
-
-#formulario .inputs #submit:hover {
-    background: -moz-linear-gradient(
-        top,
-        #a4b0cb 0%,
-        #b9c5dd);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#a4b0cb),
-        to(#b9c5dd));
+.login-box a:hover {
+  color: #fff;
 }

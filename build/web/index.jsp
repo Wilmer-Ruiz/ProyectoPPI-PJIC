@@ -24,41 +24,44 @@
             response.setHeader("Pragma", "no-cache");
             response.setDateHeader("Expires", 0);
             %>
-        <div class="container"> 
-            <form id="formulario" method="post" action="Login" onsubmit="return validar()">
-                <div class="header">      
-                    <h3>Inicio Sesión </h3>
-                </div>
-                <div class="sep"></div>
-                <div class="inputs">
-                    <label>Nombre:</label>
-                    <input type="text" name="nombre"/>
+            
+            <div class="login-box">
+                <img class="avatar" src="img/logo-login2.jpg" alt="Logo login"/>
+                <h1>Inicio de sesión</h1>
+                <form id="formulario" method="post" action="Login" onsubmit="return validar()">
+                    <label for="username">Nombre</label>
+                    <input type="text" placeholder="Ingrese nombre" name="nombre"/>
                     <span id="nombre" class="errores">text</span>
-
-                    <label>Usuario:</label>
-                    <input type="text" name="usuario"/>
+                    
+                    <label for="username2">Usuario</label>
+                    <input type="text" placeholder="Ingrese usuario" name="usuario"/>
                     <span id="usuario" class="errores">text</span>
-
-                    <label>Contraseña:</label>
-                    <input type="password" name="password"/>
+                    
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" placeholder="Contraseña" name="password"/>
                     <span id="password" class="errores">text</span>
-
-                    <label>Confirmar contraseña:</label>
-                    <input type="password" name="confirmarpassword"/>
+                    
+                    <label for="contraseña2">Confirmar contraseña</label>
+                    <input type="password" placeholder="Confirmar contraseña" name="confirmarpassword"/>
                     <span id="confirmarpassword" class="errores">text</span>
 
                     <input type="submit" name="enviar" value="Ingresar" />
                     <input type="hidden" name="pagina" value="index" />
 
                     <span id="validar" class="errores">text</span>
-            </form>
-
-            
-            <!-- Formulario para crear cuenta -->
+                </form>
+                <!-- Formulario para crear cuenta -->
             <form id="crear-cuenta" onclick="crearCuenta()">
                 <span> Crear una Cuenta </span>
                 <input type="hidden" name="pagina" value="index-crear-cuenta"/>
             </form>
+            </div>  
+            
+            
+    
+
+            
+            
 
             <% 
            
@@ -80,7 +83,6 @@
             <% 
                 }
             %>
-        </div>
-    </div>
+     
 </body>
 </html>

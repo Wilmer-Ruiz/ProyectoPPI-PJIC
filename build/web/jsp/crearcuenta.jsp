@@ -16,50 +16,50 @@
             response.setDateHeader("Expires", 0);
         %>
 
-        <div class="container"> 
+        <div class="login-box">
+            <img src="img/logo-login2.jpg" class="avatar" alt="Logo regiss">
+            <h1>Registro</h1>
+
             <form id="formulario" >
                 <input type="hidden" name="pagina" />
-                <div class="header">      
-                    <h3>Registro </h3>
-                </div>
-                <div class="sep"></div>
-                <div class="inputs">
-                    <label>Nombre:</label>
-                    <input type="text" name="nombre"/>
-                    <span id="nombre" class="errores">text</span>
+                <label for="username">Nombre:</label>
+                <input type="text" placeholder="Ingrese nombre" name="nombre"/>
+                <span id="nombre" class="errores">text</span>
 
-                    <label>Usuario:</label>
-                    <input type="text" name="usuario"/>
-                    <span id="usuario" class="errores">text</span>
+                <label for="username2">Usuario:</label>
+                <input type="text" placeholder="Ingrese usuario" name="usuario"/>
+                <span id="usuario" class="errores">text</span>
 
-                    <label>Contraseña:</label>
-                    <input type="password" name="password"/>
-                    <span id="password" class="errores">text</span>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" placeholder="Ingrese contraseña" name="password"/>
+                <span id="password" class="errores">text</span>
 
-                    <label>Confirmar contraseña:</label>
-                    <input type="password" name="confirmarpassword"/>
-                    <span id="confirmarpassword" class="errores">text</span>
-                    
-                    <input type="button" name="cancelar" value="Cancelar" onclick="validar('cancelar')" />
-                    <input type="button" name="enviar" value="Ingresar" onclick="validar('enviar')" />
-                    
+                <label for="contraseña2">Confirmar contraseña:</label>
+                <input type="password" placeholder="Confirmar contraseña" name="confirmarpassword"/>
+                <span id="confirmarpassword" class="errores">text</span>
 
-                    <span id="validar" class="errores">text</span>
+                <input type="button" name="cancelar" value="Cancelar" onclick="validar('cancelar')" />
+                <input type="button" name="enviar" value="Ingresar" onclick="validar('enviar')" />
+
+
+                <span id="validar" class="errores">text</span>
             </form>
-             </div>
-    </div>
-        <% 
+
+        </div>
+
+        
+        <%
             //Verificar el validado de CrearCuenta
             String respuesta = (String) request.getAttribute("validado");
-            
-            if(respuesta != null){
-        
+
+            if (respuesta != null) {
+
         %>
         <script>
             validarCuenta('<%=respuesta%>');
         </script>
-        
-        <% 
+
+        <%
             }
         %>
     </body>

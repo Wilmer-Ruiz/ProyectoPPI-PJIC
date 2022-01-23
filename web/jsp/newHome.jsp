@@ -12,8 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JSP Page</title>
         <link rel="stylesheet" type="text/css" href="css/newHome.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+        <link rel="stylesheet" type="text/css" href="css/fontello.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <body>
         <%
@@ -21,7 +21,26 @@
             response.setHeader("Pragma", "no-cache");
             response.setDateHeader("Expires", 0);
         %>
-        <div class="title">
+        
+      <header>
+        <nav>
+            <form method="post" action="Servidor2" style="text-align: center">
+            <input type="submit"  name="enviar" value="Ecoparques"/>
+            <input type="hidden" name="pagina" value="newhome-home"/>
+            <input type="submit" name="enviar" value="Aves" />
+        </nav>
+        <section class="textos-header">
+            <h1>La mejor web de ecoparques Antioqueños</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+        
+        
+    <!---  <div class="title">
             <h1>ECOPARK PALMAS</h1>
 
         </div>
@@ -73,26 +92,15 @@
             llamado Balandú, el cual cuenta con unas zonas verdes, bosques supremamente hermosos, entonces un lugar como Balandú, representa
             demasiadas partes de Antioquía que cuentan con zonas iguales y en su efecto con Ecoparques.</p>
             
-            <h3 style="text-align: center">Da Click y conoce nuestro Ecoparques y Aves</h3>
+            <h3 style="text-align: center">Da Click y conoce nuestro Ecoparques y Aves</h3> 
             
             <form method="post" action="Servidor2" style="text-align: center">
             <input type="submit"  name="enviar" value="Mira nuestros Ecoparques y Aves!!"/>
             <input type="hidden" name="pagina" value="newhome-home"/>
         </form>
-        </div>
+        </div> 
 
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
     </body>
 </html>

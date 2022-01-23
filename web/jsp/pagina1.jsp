@@ -33,9 +33,9 @@
             } else {
         %>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Ecoparques</a>
+                <a class="navbar-brand" href="#">Aves</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -56,7 +56,7 @@
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -66,8 +66,8 @@
 
 
         <span>
-            Nombre: <%=nombre%> 
-            User: <%=username%>
+            Bienvenido <%=nombre%> 
+            
         </span>
         <%
             }

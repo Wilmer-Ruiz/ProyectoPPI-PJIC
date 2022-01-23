@@ -1,4 +1,4 @@
-.title {
+/*.title {
   font-size: 35px;
   width: 100%;
   left: 0;
@@ -12,3 +12,118 @@
   color: black;
 }
 
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background:#2D63BF;
+    color: #fff;  
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+    
+}
+
+h1 {
+    width: 98%;
+    margin: auto;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+}*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(187, 95%, 50%, 0.281), hsla(115, 45%, 52%, 0.253)), url(../img/ecoparque.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(177, 95%, 50%, 0.219), hsla(143, 45%, 52%, 0.295)), url(../img/ecoparque.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+
+
+nav input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #27AE60;
+  color: #000;
+  font-size: 18px;
+  border-radius: 20px;
+  
+}
+nav > input[type="submit"]{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
