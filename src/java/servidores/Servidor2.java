@@ -382,7 +382,48 @@ public class Servidor2 extends HttpServlet {
             RequestDispatcher despachador = request.getRequestDispatcher("jsp/Home.jsp");
             despachador.forward(request, response);
         
+        } else if(pagina.equals("ecoparks-home")){
+            
+            Connection conexion = null;
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                try {
+                    conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecopark", "root", "");
+                    
+                    Statement sentencia_sql = conexion.createStatement();
+                    
+                    ResultSet ecoparque = sentencia_sql.executeQuery("select * from ecopark.ecoparque");
+                    
+                    //Recorrer los clientes que se obtuvieron de la base de datos.
+                    while(ecoparque.next()){
+                    idEcoparque = ecoparque.getInt("idEcoparque");
+                    nombreEco = ecoparque.getString("nombreEco");
+                    ubicacionEco = ecoparque.getString("ubicacionEco");
+                    infoEco = ecoparque.getString("infoEco");
+                    rutaEco = ecoparque.getString("rutaEco");
+                    imgEco = ecoparque.getString("imgEco");
+                    
+                    lista.insertarPrincipioNodo(idEcoparque, nombreEco, ubicacionEco, infoEco, rutaEco, imgEco);
+                    
+                    
+                    }
+                    //cerramos la conexión
+                    conexion.close();
+                    
+                    
+                    
+                } catch (SQLException ex) {
+                    System.out.println(ex.getStackTrace());
+                }
+            } catch (ClassNotFoundException ex) {
+                System.out.println(ex.getStackTrace());
+            }
+            request.setAttribute("ecoparque", lista);
+            HttpSession sesion = request.getSession(false);
+            RequestDispatcher despachador = request.getRequestDispatcher("jsp/ecoparks.jsp");
+            despachador.forward(request, response);
         }
+                
 
     }
 

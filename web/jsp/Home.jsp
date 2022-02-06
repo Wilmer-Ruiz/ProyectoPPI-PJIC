@@ -92,7 +92,9 @@
                     <h5 class="filas"><%= lista.getEcoparque(i).getNombreEco()%></h5>
                     <p class="card-text"><%= lista.getEcoparque(i).getInfoEco()%></p>
                     <p class="card-text"><%= lista.getEcoparque(i).getUbicacionEco()%></p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <form method="post" action="Servidor2" style="text-align: center">
+                        <input type="submit"  name="enviar" value="Ver más"/>
+                        <input type="hidden" name="pagina" value="ecoparks-home"/>
                 </div>
             </div>  
 
