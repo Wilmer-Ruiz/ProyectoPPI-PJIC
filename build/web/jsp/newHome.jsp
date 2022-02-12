@@ -28,6 +28,7 @@
             <input type="submit"  name="enviar" value="Ecoparques"/>
             <input type="hidden" name="pagina" value="newhome-home"/>
             <input type="submit" name="enviar" value="Aves" />
+            
         </nav>
         <section class="textos-header">
             <h1>La mejor web de ecoparques Antioqueños</h1>
